@@ -1,0 +1,48 @@
+<!--The whole content below can be removed with the new code.-->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+      <!-- Show / Hide using ngIf directive -->
+      <h1>
+        {{title}}
+      </h1>
+      <br><br>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Index</th>
+            <th>Roll Number</th>
+            <th>Name</th>
+            <th>English</th>
+            <th>Maths</th>
+            <th>Science</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let student of studentDataArray; let i=index">
+            <td appMyHighlighter>
+              {{i}}
+            </td>
+            <td>
+              {{student.rollNo}}
+            </td>
+            <td>
+              {{student.name}}
+            </td>
+            <td>
+              {{student.englishMarks}}
+            </td>
+            <td>
+              {{student.mathsMarks}}
+            </td>
+            <td>
+              {{student.scienceMarks}}
+            </td>
+
+        </tbody>
+      </table>
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+</div>
